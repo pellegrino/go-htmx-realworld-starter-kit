@@ -26,6 +26,7 @@
 .DS_Store
 Thumbs.db
 
+tmp/
 
 #log files
 npm-debug.log*
