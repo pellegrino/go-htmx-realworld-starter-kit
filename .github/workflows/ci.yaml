@@ -24,13 +24,10 @@ jobs:
         ports:
           - 5432:5432
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-go@v4
         with:
-          go-mod-file: go.mod
-
-      - name: Check out code
-        uses: actions/checkout@v3
-
+          go-version: '1.21.3'
       - name: Mod tidy
         run: go mod tidy
 
